@@ -102,7 +102,7 @@ data/yugioh-newlevels.mse-symbol-font/rightbracket_ko.png	6f880f50f3422f93418e98
 data/yugioh-newlevels.mse-symbol-font/ritual.png	15f717fc2008e492839f52326877cace
 data/yugioh-newlevels.mse-symbol-font/RitualSpell.png	7b3e35fb686100d2e3bb85ade08d12d3
 data/yugioh-newlevels.mse-symbol-font/star.png	4d70faaabbb5a4b7518480ff13168a2a
-data/yugioh-newlevels.mse-symbol-font/symbol-font	f60588c37dd0257e5ec326c3069c6cac
+data/yugioh-newlevels.mse-symbol-font/symbol-font	b2bea7725bf4211f6fd2dbeee2a6ffbc
 data/yugioh-newlevels.mse-symbol-font/xyzstar.png	14f16e3c8bc02efff97313e4710bf1c9
 data/yugioh-standard-levels.mse-symbol-font/continuous.png	a0561bd2bf355be7d51a93205077f1d7
 data/yugioh-standard-levels.mse-symbol-font/counter.png	2fb26c8a3c2b01f8c4f494ccf6c9fe2f
@@ -168,9 +168,9 @@ data/yugioh.mse-game/set_fields	ec980b950212f94bb04af7d0ffa28dc1
 data/yugioh.mse-game/word_lists	0a4185b8170b8365e85cbb7569131175
 data/yugioh.mse-game/word_lists_backup	7cc2cc06a519721c17142f39420b129e
 update/delete.txt	c9b2ae557a77257e12e9a5599336afeb
-update/filelist.txt	5ae8182aa6b5d35e19a9266594d3c12c
+update/filelist.txt	521532117364ceac05e59131538820b7
 update/readme.txt	c25b2db6007096a779546008322d372c
 update/rename.txt	cbfaccc657e73040ec051233017b2c4d
 update/update-client.bat	6509e43c5d5580b432fbf9ddd331b5a2
 update/update-server.bat	425d7061cf8ae3c9ea1c1fddee14770c
-update/version.txt	11fa3dc3ace7f7b8de72eadeb34d4c76
+update/version.txt	1b19c3d29e8270e8724b496bce011715

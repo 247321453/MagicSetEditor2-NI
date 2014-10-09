@@ -66,11 +66,11 @@ symbol:
 	image: ritual.png
 symbol:
 	code: [
-	image: leftbracket.png
+	image: leftbracket_en.png
 	image font size: 28
 symbol:
 	code: ]
-	image: rightbracket.png
+	image: rightbracket_en.png
 	image font size: 28
 symbol:
 	code: *
