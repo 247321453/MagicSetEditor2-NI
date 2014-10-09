@@ -1,20 +1,21 @@
 Magic Set Editor 2 New Ide for YuGiOh
 ==================
-modifty by:247321453(菜菜),传说之涵
+modifty by:247321453(菜菜),传说之涵<br>
 http://magicseteditor.sourceforge.net/
-
-fonts list:
-
-DFPLiShuW5-B5
-DFLeiSho
-KoreanYSB
-MatrixRegularSmallCaps
-SD Book-B
-MatrixBoldSmallCaps
-Matrix
-Palatino Linotype
-BankGothic Md BT
-Palatino Linotype Bold
-SD Book-L
-MatrixBook
+<br>
+fonts list:			<br>
+DFPKuoTaiBeiW4-B5	<br>
+DFPLiShuW5-B5		<br>
+DFLeiSho			<br>
+KoreanYSB			<br>
+MatrixRegularSmallCaps	<br>
+SD Book-B			<br>
+MatrixBoldSmallCaps	<br>
+Matrix				<br>
+Palatino Linotype	<br>
+BankGothic Md BT	<br>
+Palatino Linotype Bold	<br>
+SD Book-L			<br>
+MatrixBook			<br>
+Matrix-Bold			<br>
 
