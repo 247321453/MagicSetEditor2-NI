@@ -24,6 +24,12 @@ card dpi: 152.6265
 ############################################################## Extra style
 styling field:
 	type: choice
+	name: language
+	description: Language.
+	initial: English
+	choice: English
+styling field:
+	type: choice
 	name: rules alignment
 	description: Should the rules text be justified? WARNING: Justification is not perfect.
 	initial: justified

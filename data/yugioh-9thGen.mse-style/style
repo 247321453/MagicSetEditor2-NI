@@ -24,7 +24,7 @@ card dpi: 152.6265
 styling field:
 	type: choice
 	name: language
-	description: Should the rules text be justified? WARNING: Justification is not perfect.
+	description: Language.
 	initial: 繁體中文
 	choice: English
 	choice: 简体中文
@@ -97,11 +97,7 @@ styling field:
 	name: mark has text
 	description: OCG magic and traps.
 	initial: no
-styling field:
-	type: boolean
-	name: no number
-	description: Don't display card package number.
-	initial: yes
+
 styling field:
 	type: boolean
 	name: no corner
@@ -122,25 +118,18 @@ init script:
 	is_big_pend :={get_pendulum_mask() == "big"}
 	is_small_pend :={get_pendulum_mask() == "small"}
 	
+	is_switch := {styling.rules_alignment == "justified"}
 	is_pendulum := { not is_nopendulum() }
 	####black
 	is_exmonster := { ( is_xyz() or is_Dsynchro() ) and  is_nopendulum() }
 	
 	is_no_corner := {styling.no_corner=="yes"}
 	
-	is_chs := { styling.language == "简体中文"}
-	is_cht := { styling.language == "繁體中文"}
-	is_cn := {is_chs() or is_cht() or styling.language == "中文"}
-	is_en := { styling.language == "English"}
-	is_jp := { styling.language == "日本語"}
-	is_ko := { styling.language == "한국어"}
 	jp_or_en:={ if is_en() then "en" else "jp"}
 	
 	lang :={if is_cn() then "cn" else if is_jp() then "jp" else if is_ko() then "ko" else "en"}
 	
 	use_name_color := {styling.name_color != rgb(254,255,254)}
-	
-
 	
 	is_no_frame :={styling.image_frame=="no frame" and is_nopendulum() }
 	
@@ -346,7 +335,6 @@ card style:
 			color: 
 				script: if is_exmonster() then rgb(255,255,255)
 				else rgb(0,0,0)
-		visible: script: if styling.no_number == "yes" then false else true
 	edition:
 		left: script: if is_nopendulum() then 43 else 237
 		top: script: if is_nopendulum() then 372.5 else 393
@@ -375,7 +363,7 @@ card style:
 			name: yugioh-text-replacements
 			alignment: middle center
 			size: 3.5
-		alignment: top left stretch
+		alignment: top left stretch if-overflow
 		z index: 3
 		padding left: 1
 		padding top: 0
@@ -877,7 +865,7 @@ extra card style:
 			size: 4
 			scale down to: 4
 			color: rgb(0,0,0)
-		alignment: top left
+		alignment: top left stretch if-overflow
 		z index: 2
 		padding left: 1
 		padding top: 0
@@ -912,7 +900,7 @@ extra card style:
 			name: yugioh-text-replacements
 			alignment: middle center
 			size: 3.5
-		alignment: top left stretch
+		alignment: top left stretch if-overflow
 		z index: 3
 		padding left: 1
 		padding top: 2

@@ -1,4 +1,12 @@
 ﻿
+	# language
+	is_chs := { styling.language == "简体中文"}
+	is_cht := { styling.language == "繁體中文"}
+	is_cn := {is_chs() or is_cht() or styling.language == "中文"}
+	is_en := { styling.language == "English"}
+	is_jp := { styling.language == "日本語"}
+	is_ko := { styling.language == "한국어"}
+
 	# the rule text filter
 	#  - adds continuous symbols
 	#  - adds counter symbols
