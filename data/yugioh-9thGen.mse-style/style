@@ -148,20 +148,20 @@ init script:
 	is_13star :={ remove_tags(card.level) == "*************" }	
 	
 	card_init_color := {
-		if card.card_type== "normal monster" then rgb(210,180,52)
-		else if card.card_type== "effect monster" then rgb(205,70,0)
+		if card.card_type== "normal monster" then rgb(196,172,52)
+		else if card.card_type== "effect monster" then rgb(196,72,12)
 		else if card.card_type== "xyz monster" then rgb(0,0,0)
 		else if card.card_type== "synchro monster" then rgb(215,215,215)
-		else if card.card_type== "ritual monster" then rgb(97,151,223)
-		else if card.card_type== "fusion monster" then rgb(110,80,170)
+		else if card.card_type== "ritual monster" then rgb(97,150,225)
+		else if card.card_type== "fusion monster" then rgb(120,88,196)
 		else if card.card_type== "dark synchro monster" then rgb(26,26,26)
 		else if card.card_type== "token monster" then rgb(150,150,150)
-		else if card.card_type== "obelisk" then rgb(0,0,205)
-		else if card.card_type== "ra" then rgb(205,205,0)
-		else if card.card_type== "slifer" then rgb(205,0,0)
-		else if card.card_type== "legendary dragons" then rgb(108,180,185)
-		else if card.card_type== "trap card" then rgb(180,30,90)
-		else if card.card_type== "spell card" then rgb(1,132,87)
+		else if card.card_type== "obelisk" then rgb(0,0,196)
+		else if card.card_type== "ra" then rgb(196,196,0)
+		else if card.card_type== "slifer" then rgb(196,0,0)
+		else if card.card_type== "legendary dragons" then rgb(12,150,150)
+		else if card.card_type== "trap card" then rgb(196,30,88)
+		else if card.card_type== "spell card" then rgb(12,128,88)
 		else rgb(225,225,225)
 		}
 	choice_foil_pendulum :={
@@ -301,7 +301,7 @@ card style:
 		left: { if is_no_frame() then 44 else if is_full_image() then 12 else if is_nopendulum() then 47.5 else 29 }
 		top: { if is_no_frame() then 94 else if is_full_image() then 12 else if is_nopendulum() then 97 else 95 }
 		width: { if is_no_frame() then 272 else if is_full_image() then 337 else if is_nopendulum() then 266 else 303 }
-		height: { if is_no_frame() then 278 else if is_full_image() then 499 else if is_nopendulum() then  271 else 314 }
+		height: { if is_no_frame() then 278 else if is_full_image() then 499 else if is_nopendulum() then  271.5 else 314 }
 		z index: 0
 	############################# Card type
 	monster type:
