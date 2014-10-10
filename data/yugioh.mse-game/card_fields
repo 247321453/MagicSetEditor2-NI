@@ -55,6 +55,7 @@ card field:
 	show statistics: false
 	card list visible: true
 	card list column: 1
+	script:name_filter(value)
 card field:
 	type: choice
 	name: attribute
@@ -182,8 +183,7 @@ card field:
 	show statistics: false
 	script:
 		if nm_ext_querry(value) then flavor_text_filter(value)
-		else if styling.language=="English" then text_filter(value)
-		else text_filter2(value)
+		else text_filter(value)
 	default: card.rules
 ############################# Attack/Defense
 card field:

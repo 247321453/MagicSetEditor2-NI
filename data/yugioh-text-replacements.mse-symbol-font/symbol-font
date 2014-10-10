@@ -15,14 +15,6 @@ symbol:
 	code: ]
 	image: rightbracket.png
 symbol:
-	code: 【
-	image: leftbracket2.png
-	image font size: 28
-symbol:
-	code: 】
-	image: rightbracket2.png
-	image font size: 28
-symbol:
 	code: @
 	image: infinity.png
 	image font size: 25
@@ -30,6 +22,14 @@ symbol:
 	code: ?
 	image: qmark.png
 	image font size: 32
+symbol:
+	code: =
+	image: dot2.png
+	image font size: 28
+symbol:
+	code: ^
+	image: space.png
+	image font size: 14
 symbol:
 	code: *
 	image: dot.png
@@ -39,8 +39,8 @@ symbol:
 insert symbol menu:
 	item: [
 	item: ]
-	item: 【
-	item: 】
+	item: =
+	item: ^
 	item: @
 	item: ?
 	item: *
