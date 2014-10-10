@@ -19,7 +19,6 @@ depends on:
 card width: 361
 card height: 523
 card dpi: 152.6265
-##############################################################
 
 ############################################################## Extra style
 styling field:
@@ -35,11 +34,19 @@ styling field:
 styling field:
 	type: choice
 	name: pendulum mask
-	description: Should the rules text be justified? WARNING: Justification is not perfect.
-	initial: none
-	choice: none
+	description: Card Has Pendulum Mask?
+	initial: normal
+	choice: normal
 	choice: big
 	choice: small
+styling field:
+	type: choice
+	name: image frame
+	description: Choosing "no frame" will omit the image frame like on Anniversary Edition cards.
+	initial: normal
+	choice: normal
+	choice: no frame
+	choice: full image
 styling field:
 	type: color
 	name: name color
@@ -70,9 +77,6 @@ styling field:
 	name: shadow color
 	description: The shadow color for card name.
 	initial: rgb(0,0,0)
-	choice:
-		name: none
-		color: rgba(0,0,0,0)
 	choice: 
 		name: black
 		color: rgb(0,0,0)
@@ -88,26 +92,6 @@ styling field:
 	choice: 
 		name: gold
 		color: rgb(216,199,53)
-styling field:
-	type: choice
-	name: rules alignment
-	description: Should the rules text be justified? WARNING: Justification is not perfect.
-	initial: justified
-	choice: not justified
-	choice: justified
-styling field:
-	type: choice
-	name: image frame
-	description: Choosing "no frame" will omit the image frame like on Anniversary Edition cards.
-	initial: normal
-	choice: normal
-	choice: no frame
-	choice: full image
-#styling field:
-#	type: boolean
-#	name: bold effect text
-#	description: Should effect text be bold as seen on some cards such as those from The Dark Emperor?
-#	initial: no
 styling field:
 	type: boolean
 	name: mark has text
@@ -128,13 +112,16 @@ styling field:
 	name: copyright image
 	description: OCG copyright.
 	initial: no
-
 ############################################################## Extra scripts
 init script:
 	has_shadow :={styling.name_has_shadow =="yes"}
 	is_xyz := { card.card_type == "xyz monster" }
 	is_Dsynchro := { card.card_type == "dark synchro monster" }
-	is_nopendulum := {styling.pendulum_mask == "none"}
+	get_pendulum_mask := { styling.pendulum_mask }
+	is_nopendulum := {get_pendulum_mask() == "normal"}
+	is_big_pend :={get_pendulum_mask() == "big"}
+	is_small_pend :={get_pendulum_mask() == "small"}
+	
 	is_pendulum := { not is_nopendulum() }
 	####black
 	is_exmonster := { ( is_xyz() or is_Dsynchro() ) and  is_nopendulum() }
@@ -153,8 +140,7 @@ init script:
 	
 	use_name_color := {styling.name_color != rgb(254,255,254)}
 	
-	is_big_pend :={styling.pendulum_mask == "big"}
-	is_small_pend :={styling.pendulum_mask == "small"}
+
 	
 	is_no_frame :={styling.image_frame=="no frame" and is_nopendulum() }
 	
@@ -165,8 +151,8 @@ init script:
 	attr := { if is_ko() then "ko" else if is_en() then"en" else "jp" }
 	
 	choice_pendulum := {
-	if styling.pendulum_mask == "none" then "none" 
-	else if styling.pendulum_mask=="big" then "big" 
+	if is_nopendulum() then "none" 
+	else if is_big_pend() then "big" 
 	else "small"}
 	
 	is_12star :={ remove_tags(card.level) == "************" }
@@ -281,6 +267,7 @@ card style:
 			shadow color: { if has_shadow() then  styling.shadow_color else rgba(0,0,0,0) }
 			shadow displacement x:1
 			shadow displacement y:1
+			shadow blur: 2
 	attribute:
 		left: 297
 		top : 26
@@ -383,7 +370,7 @@ card style:
 			name: yugioh-text-replacements
 			alignment: middle center
 			size: 3.5
-		alignment: { if styling.rules_alignment=="justified" then "top left justify" else "top left" }
+		alignment: top left stretch
 		z index: 3
 		padding left: 1
 		padding top: 0
@@ -490,6 +477,7 @@ card style:
 				script: if is_exmonster() then rgb(255,255,255)
 				else rgb(0,0,0)
 ############################################extra card field:
+
 extra card field:
 	type: text
 	name: small name
@@ -560,10 +548,10 @@ extra card field:
 	type: choice
 	name: pendulum mask
 	default: choice_pendulum()
+	save value: true
 	choice: none
 	choice: big
 	choice: small
-	editable: false
 extra card field:
 	type: choice
 	name: pendulum border
