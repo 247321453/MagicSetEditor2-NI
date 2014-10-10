@@ -541,7 +541,7 @@ extra card field:
 	type: choice
 	name: pendulum mask
 	default: choice_pendulum()
-	save value: true
+	editable: false
 	choice: none
 	choice: big
 	choice: small
