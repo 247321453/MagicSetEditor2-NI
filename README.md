@@ -1,6 +1,6 @@
 Magic Set Editor 2 New Ide for YuGiOh
 ==================
-modifty by:247321453(菜菜),传说之涵<br>
+template modifty by:247321453(菜菜),传说之涵<br>
 http://magicseteditor.sourceforge.net/
 <br>
 fonts list:			<br>
