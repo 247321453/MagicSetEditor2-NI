@@ -7,8 +7,6 @@ README.md	feeae2d97947e5628128d7fad81fdb95
 test.mse-set	bad81f288817bd6c74cf92a5e6a70acf
 test.png	736da455c3444c2f1dd58379f79c71e2
 test2.png	735a9c0ab4bd07cd6e19bf1d2a98dc84
-无标题.mse-set	4426164de4f3d48a8036bc5d40146769
-无标题.mse-set.bak	1dc7ffafb2fea4d157e39b70f89afb59
 data/cns.mse-locale/cn.png	a82ff00f39eff54062328b4474c33dbc
 data/cns.mse-locale/locale	2ac505cfd74b6c70eb3b55d38dd9bf04
 data/dictionaries/en_US.aff	fc49f9cf50a047436bee175408631f1a
@@ -44,7 +42,7 @@ data/yugioh-9thGen.mse-style/pend_small_gold.png	1fc65fbb4795b23b11e57d87cc19401
 data/yugioh-9thGen.mse-style/pend_small_gold2.png	102d3f51a9b32af2706c62d90a4d07ef
 data/yugioh-9thGen.mse-style/secretfoil.png	c191c3d517c6e6b371774674d802d050
 data/yugioh-9thGen.mse-style/secretfoil2.png	edce96b917c50fe69d59c1ec16418214
-data/yugioh-9thGen.mse-style/style	0c50f68667fc647329abc3133444aadd
+data/yugioh-9thGen.mse-style/style	110b795b9eb8542eb383596c989b5896
 data/yugioh-9thGen.mse-style/superfoil.png	26da269e76f6dc5bdb677f24cfd849ea
 data/yugioh-9thGen.mse-style/ultimaterfoil.png	79a4e0834a7f0b2fecf8e92c1e7cd7e4
 data/yugioh-9thGen.mse-style/xyz.png	c3a58f143c0f0b6b50ccf40eb7f116bb
@@ -173,9 +171,9 @@ data/yugioh.mse-game/set_fields	ec980b950212f94bb04af7d0ffa28dc1
 data/yugioh.mse-game/word_lists	0a4185b8170b8365e85cbb7569131175
 data/yugioh.mse-game/word_lists_backup	7cc2cc06a519721c17142f39420b129e
 update/delete.txt	c9b2ae557a77257e12e9a5599336afeb
-update/filelist.txt	58d64f84017c2c5b6885e717c1ad28e7
+update/filelist.txt	cac8db990d3c7890734be8c832ef5276
 update/readme.txt	c25b2db6007096a779546008322d372c
 update/rename.txt	cbfaccc657e73040ec051233017b2c4d
 update/update-client.bat	6509e43c5d5580b432fbf9ddd331b5a2
 update/update-server.bat	425d7061cf8ae3c9ea1c1fddee14770c
-update/version.txt	d4db08d2cc3b7348d2e0f3b50aa96f6a
+update/version.txt	5c40dc4db41a0b71e7b0bd7f7eede252
