@@ -148,14 +148,14 @@ init script:
 	is_13star :={ remove_tags(card.level) == "*************" }	
 	
 	card_init_color := {
-		if card.card_type== "normal monster" then rgb(196,172,52)
+		if card.card_type== "normal monster" then rgb(196,168,52)
 		else if card.card_type== "effect monster" then rgb(196,72,12)
 		else if card.card_type== "xyz monster" then rgb(0,0,0)
 		else if card.card_type== "synchro monster" then rgb(215,215,215)
 		else if card.card_type== "ritual monster" then rgb(97,150,225)
 		else if card.card_type== "fusion monster" then rgb(120,88,196)
 		else if card.card_type== "dark synchro monster" then rgb(26,26,26)
-		else if card.card_type== "token monster" then rgb(150,150,150)
+		else if card.card_type== "token monster" then rgb(156,156,156)
 		else if card.card_type== "obelisk" then rgb(0,0,196)
 		else if card.card_type== "ra" then rgb(196,196,0)
 		else if card.card_type== "slifer" then rgb(196,0,0)
@@ -509,6 +509,11 @@ extra card field:
 	save value: true
 	show statistics: false
 #################
+extra card field:
+	type: choice
+	name: name bg
+	choice: bg
+	editable: false
 extra card field:
 	type: choice
 	name: bar

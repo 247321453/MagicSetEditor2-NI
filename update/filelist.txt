@@ -42,7 +42,7 @@ data/yugioh-9thGen.mse-style/pend_small_gold.png	1fc65fbb4795b23b11e57d87cc19401
 data/yugioh-9thGen.mse-style/pend_small_gold2.png	102d3f51a9b32af2706c62d90a4d07ef
 data/yugioh-9thGen.mse-style/secretfoil.png	c191c3d517c6e6b371774674d802d050
 data/yugioh-9thGen.mse-style/secretfoil2.png	edce96b917c50fe69d59c1ec16418214
-data/yugioh-9thGen.mse-style/style	a3583f69c96fd06f4b264f78e08b2c6d
+data/yugioh-9thGen.mse-style/style	c4c6dfdbf0b7d958aae07b0cc46b2b3c
 data/yugioh-9thGen.mse-style/superfoil.png	26da269e76f6dc5bdb677f24cfd849ea
 data/yugioh-9thGen.mse-style/ultimaterfoil.png	79a4e0834a7f0b2fecf8e92c1e7cd7e4
 data/yugioh-9thGen.mse-style/xyz.png	c3a58f143c0f0b6b50ccf40eb7f116bb
@@ -171,7 +171,6 @@ data/yugioh.mse-game/set_fields	ec980b950212f94bb04af7d0ffa28dc1
 data/yugioh.mse-game/word_lists	0a4185b8170b8365e85cbb7569131175
 data/yugioh.mse-game/word_lists_backup	7cc2cc06a519721c17142f39420b129e
 fonts/BankGothic Md BT.ttf	39c298797753d52803b277e3b24f0181
-fonts/DFPLiShuW5-B5.TTF	0126aeed510d2cdde829c69a9d9cd821
 fonts/Matrix-Bold.ttf	2d1f9ba3bf7cf63bed5aa6468344aa9d
 fonts/MatrixBoldSmallCaps.ttf	3ee4abbc06b62565e09e7408fde6ebf5
 fonts/MatrixBook.ttf	84c17eb1d86a497e938dd58b65ee5387
@@ -179,9 +178,9 @@ fonts/MatrixRegularSmallCaps.ttf	04c9331ac9e9a73ad4566ca947b9e3b5
 fonts/Palatino Linotype Bold.ttf	c9dd1cadf6e3139c6c8204ce83c00974
 fonts/Palatino Linotype.ttf	96261bb90c9babbf8042ce7f43200d65
 update/delete.txt	c9b2ae557a77257e12e9a5599336afeb
-update/filelist.txt	bdc1c3df82799daacac20b688764c0ba
+update/filelist.txt	96e110ad5867d1ec16a10a17a3480240
 update/readme.txt	c25b2db6007096a779546008322d372c
 update/rename.txt	cbfaccc657e73040ec051233017b2c4d
 update/update-client.bat	6509e43c5d5580b432fbf9ddd331b5a2
 update/update-server.bat	425d7061cf8ae3c9ea1c1fddee14770c
-update/version.txt	d17bf718ec783249487052373f6ebd01
+update/version.txt	0904b02dec6eb0da191ba56b2b584407
